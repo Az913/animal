@@ -2,160 +2,160 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>a12</key>
+	<key>animal12</key>
 	<dict>
-		<key>animalName</key>
+		<key>動物名</key>
 		<string>RaccoonDog</string>
-		<key>type</key>
+		<key>タイプ</key>
 		<integer>1</integer>
-		<key>future</key>
+		<key>未来展望型</key>
 		<false/>
-		<key>right</key>
+		<key>右脳派</key>
 		<false/>
-		<key>goal</key>
+		<key>目標志向型</key>
 		<false/>
 	</dict>
-	<key>a11</key>
+	<key>animal11</key>
 	<dict>
-		<key>animalName</key>
+		<key>動物名</key>
 		<string>Tiger</string>
-		<key>type</key>
+		<key>タイプ</key>
 		<integer>2</integer>
-		<key>future</key>
+		<key>未来展望型</key>
 		<false/>
-		<key>right</key>
+		<key>右脳派</key>
 		<false/>
-		<key>goal</key>
+		<key>目標志向型</key>
 		<true/>
 	</dict>
-	<key>a10</key>
+	<key>animal10</key>
 	<dict>
-		<key>animalName</key>
+		<key>動物名</key>
 		<string>Lion</string>
-		<key>type</key>
+		<key>タイプ</key>
 		<integer>3</integer>
-		<key>future</key>
+		<key>未来展望型</key>
 		<false/>
-		<key>right</key>
+		<key>右脳派</key>
 		<false/>
-		<key>goal</key>
+		<key>目標志向型</key>
 		<false/>
 	</dict>
-	<key>a9</key>
+	<key>animal9</key>
 	<dict>
-		<key>animalName</key>
+		<key>動物名</key>
 		<string>BlackPanther</string>
-		<key>type</key>
+		<key>タイプ</key>
 		<integer>1</integer>
-		<key>future</key>
+		<key>未来展望型</key>
 		<true/>
-		<key>right</key>
+		<key>右脳派</key>
 		<false/>
-		<key>goal</key>
+		<key>目標志向型</key>
 		<true/>
 	</dict>
-	<key>a8</key>
+	<key>animal8</key>
 	<dict>
-		<key>animalName</key>
+		<key>動物名</key>
 		<string>Cheetah</string>
-		<key>type</key>
+		<key>タイプ</key>
 		<integer>3</integer>
-		<key>future</key>
+		<key>未来展望型</key>
 		<true/>
-		<key>right</key>
+		<key>右脳派</key>
 		<false/>
-		<key>goal</key>
+		<key>目標志向型</key>
 		<false/>
 	</dict>
-	<key>a7</key>
+	<key>animal7</key>
 	<dict>
-		<key>animalName</key>
+		<key>動物名</key>
 		<string>Monkey</string>
-		<key>type</key>
+		<key>タイプ</key>
 		<integer>2</integer>
-		<key>future</key>
+		<key>未来展望型</key>
 		<true/>
-		<key>right</key>
+		<key>右脳派</key>
 		<false/>
-		<key>goal</key>
+		<key>目標志向型</key>
 		<true/>
 	</dict>
-	<key>a6</key>
+	<key>animal6</key>
 	<dict>
-		<key>animalName</key>
+		<key>動物名</key>
 		<string>Fawn</string>
-		<key>type</key>
+		<key>タイプ</key>
 		<integer>1</integer>
-		<key>future</key>
+		<key>未来展望型</key>
 		<true/>
-		<key>right</key>
+		<key>右脳派</key>
 		<true/>
-		<key>goal</key>
+		<key>目標志向型</key>
 		<false/>
 	</dict>
-	<key>a5</key>
+	<key>animal5</key>
 	<dict>
-		<key>animalName</key>
+		<key>動物名</key>
 		<string>Wolf</string>
-		<key>type</key>
+		<key>タイプ</key>
 		<integer>2</integer>
-		<key>future</key>
+		<key>未来展望型</key>
 		<true/>
-		<key>right</key>
+		<key>右脳派</key>
 		<true/>
-		<key>goal</key>
+		<key>目標志向型</key>
 		<true/>
 	</dict>
-	<key>a4</key>
+	<key>animal4</key>
 	<dict>
-		<key>animalName</key>
+		<key>動物名</key>
 		<string>Pegasus</string>
-		<key>type</key>
+		<key>タイプ</key>
 		<integer>3</integer>
-		<key>future</key>
+		<key>未来展望型</key>
 		<true/>
-		<key>right</key>
+		<key>右脳派</key>
 		<true/>
-		<key>goal</key>
+		<key>目標志向型</key>
 		<false/>
 	</dict>
-	<key>a3</key>
+	<key>animal3</key>
 	<dict>
-		<key>animalName</key>
+		<key>動物名</key>
 		<string>Sheep</string>
-		<key>type</key>
+		<key>タイプ</key>
 		<integer>1</integer>
-		<key>future</key>
+		<key>未来展望型</key>
 		<false/>
-		<key>right</key>
+		<key>右脳派</key>
 		<true/>
-		<key>goal</key>
+		<key>目標志向型</key>
 		<true/>
 	</dict>
-	<key>a2</key>
+	<key>animal2</key>
 	<dict>
-		<key>animalName</key>
+		<key>動物名</key>
 		<string>Elephant</string>
-		<key>type</key>
+		<key>タイプ</key>
 		<integer>3</integer>
-		<key>future</key>
+		<key>未来展望型</key>
 		<false/>
-		<key>right</key>
+		<key>右脳派</key>
 		<true/>
-		<key>goal</key>
+		<key>目標志向型</key>
 		<false/>
 	</dict>
-	<key>a1</key>
+	<key>animal1</key>
 	<dict>
-		<key>animalName</key>
+		<key>動物名</key>
 		<string>Koala</string>
-		<key>type</key>
+		<key>タイプ</key>
 		<integer>2</integer>
-		<key>future</key>
+		<key>未来展望型</key>
 		<false/>
-		<key>right</key>
+		<key>右脳派</key>
 		<true/>
-		<key>goal</key>
+		<key>目標志向型</key>
 		<true/>
 	</dict>
 </dict>

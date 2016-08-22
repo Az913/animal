@@ -25,10 +25,9 @@ class ViewController: UIViewController {
         var results:NSArray = readData()
         if(results.count == 0) {
             // 初期データーの投入
-            initAnimals()
+            writeAnimals()
             results = readData()
         }
-        
         
         //占いボタン生成
         //let btn: UIButton = UIButton(frame: CGRectMake(100, 150, 200, 30))
@@ -81,10 +80,10 @@ class ViewController: UIViewController {
         
         let moon = "MOON"
         
-        var results:NSArray = readData()
+        let results:NSArray = readData()
         if (results.count > 0 ) {
-            for(var i = 0; i<results.count; i++) {
-                let obj = results[i] as! NSManagedObject
+            for i in results {
+                let obj = i as! NSManagedObject
                 let txt = obj.valueForKey("animalName") as! String
                
                 if txt == a.animal {
@@ -101,6 +100,7 @@ class ViewController: UIViewController {
                         backgroundImage.image = UIImage(named: "SUN.png")
                     default:
                         backgroundImage.hidden = true
+                        text.backgroundColor = UIColor.whiteColor()
                         
                     }
                     
@@ -171,7 +171,7 @@ class ViewController: UIViewController {
                     let data = try NSData(contentsOfURL: NSURL(fileURLWithPath: filePath), options: NSDataReadingOptions.DataReadingMappedIfSafe)
                     let jsonObj = JSON(data: data)
                     if jsonObj != JSON.null {
-                        for (key, subJson) in jsonObj["result"] {
+                        for (_, subJson) in jsonObj["result"] {
                             if let title = subJson["number"].string {
                                 if num == title {
                                     yourAnimal = subJson["title"].string!
@@ -204,43 +204,39 @@ class ViewController: UIViewController {
         let categoryRequest: NSFetchRequest = NSFetchRequest(entityName: "AnimalType")
         
         let results: NSArray! = try! categoryContext.executeFetchRequest(categoryRequest)
-        
+       
         return results
     }
     
-    func initAnimals() {
+    func writeAnimals() {
         
         // plist の読み込み
         let path:NSString = NSBundle.mainBundle().pathForResource("AnimalData", ofType: "plist")!
         
-        var masterDataDictionary:NSDictionary = NSDictionary(contentsOfFile: path as String)!
+        let masterDataDictionary:NSDictionary = NSDictionary(contentsOfFile: path as String)!
         
        // let app: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let categoryContext: NSManagedObjectContext = coreDataStack.managedObjectContext
         
-        for(var i = 1; i<=masterDataDictionary.count; i++) {
-            let index_name: String = "a" + String(i)
-            var item: AnyObject = masterDataDictionary[index_name]!
+        for i in 1...masterDataDictionary.count {
+            let indexName: String = "animal" + String(i)
+            let item: AnyObject = masterDataDictionary[indexName]!
             
             let categoryEntity: NSEntityDescription! = NSEntityDescription.entityForName(
                 "AnimalType",
                 inManagedObjectContext: categoryContext
             )
-            var new_data  = NSManagedObject(entity: categoryEntity, insertIntoManagedObjectContext: categoryContext)
+            let data  = NSManagedObject(entity: categoryEntity, insertIntoManagedObjectContext: categoryContext)
             
-            new_data.setValue(item["animalName"] as! String, forKey: "animalName")
-            new_data.setValue(item["type"] as! NSNumber, forKey: "type")
-            new_data.setValue(item["future"] as! Bool, forKey: "future")
-            new_data.setValue(item["right"] as! Bool, forKey: "right")
-            new_data.setValue(item["goal"] as! Bool, forKey: "goal")
-            
+            data.setValue(item["動物名"] as! String, forKey: "animalName")
+            data.setValue(item["タイプ"] as! NSNumber, forKey: "type")
+            data.setValue(item["未来展望型"] as! Bool, forKey: "future")
+            data.setValue(item["右脳派"] as! Bool, forKey: "right")
+            data.setValue(item["目標志向型"] as! Bool, forKey: "goal")
             
             try! categoryContext.save()
             
         }
-        
-        
-        print("------------")
     }
     
     //    // データ読み込み

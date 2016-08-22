@@ -14,12 +14,8 @@
 		2319CD3C1D6742200073866A /* AnimalFortuneTellingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2319CD3B1D6742200073866A /* AnimalFortuneTellingTests.swift */; };
 		2319CD471D6742200073866A /* AnimalFortuneTellingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2319CD461D6742200073866A /* AnimalFortuneTellingUITests.swift */; };
 		2319CD571D6742E00073866A /* AnimalFortuneTellingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2319CD561D6742E00073866A /* AnimalFortuneTellingView.xib */; };
-		2319CD5A1D68781D0073866A /* Animal+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2319CD581D68781D0073866A /* Animal+CoreDataProperties.swift */; };
-		2319CD5B1D68781D0073866A /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2319CD591D68781D0073866A /* Animal.swift */; };
 		2319CD5D1D6879560073866A /* animalType.json in Resources */ = {isa = PBXBuildFile; fileRef = 2319CD5C1D6879560073866A /* animalType.json */; };
 		23B3CC281D68C696003AB5FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23B3CC271D68C696003AB5FB /* Assets.xcassets */; };
-		23B3CC2D1D68CD38003AB5FB /* AnimalType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B3CC2B1D68CD38003AB5FB /* AnimalType+CoreDataProperties.swift */; };
-		23B3CC2E1D68CD38003AB5FB /* AnimalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B3CC2C1D68CD38003AB5FB /* AnimalType.swift */; };
 		23B3CC301D68CEA7003AB5FB /* AnimalData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23B3CC2F1D68CEA7003AB5FB /* AnimalData.plist */; };
 		23B3CC321D6B2232003AB5FB /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B3CC311D6B2232003AB5FB /* CoreDataStack.swift */; };
 		D7BC014D91576587BE42D11F /* Pods_AnimalFortuneTellingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD88BB81EB9EEE92A937755A /* Pods_AnimalFortuneTellingUITests.framework */; };
@@ -60,12 +56,8 @@
 		2319CD461D6742200073866A /* AnimalFortuneTellingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalFortuneTellingUITests.swift; sourceTree = "<group>"; };
 		2319CD481D6742200073866A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2319CD561D6742E00073866A /* AnimalFortuneTellingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnimalFortuneTellingView.xib; sourceTree = "<group>"; };
-		2319CD581D68781D0073866A /* Animal+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Animal+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		2319CD591D68781D0073866A /* Animal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		2319CD5C1D6879560073866A /* animalType.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = animalType.json; path = "../../../../Downloads/test-master/AnimalFortuneTelling/animalType.json"; sourceTree = "<group>"; };
 		23B3CC271D68C696003AB5FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		23B3CC2B1D68CD38003AB5FB /* AnimalType+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AnimalType+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		23B3CC2C1D68CD38003AB5FB /* AnimalType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalType.swift; sourceTree = "<group>"; };
 		23B3CC2F1D68CEA7003AB5FB /* AnimalData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AnimalData.plist; path = ../AnimalData.plist; sourceTree = "<group>"; };
 		23B3CC311D6B2232003AB5FB /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		3F23CEBAA8E709CA2B545868 /* Pods_AnimalFortuneTellingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimalFortuneTellingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,12 +122,8 @@
 		2319CD221D6742200073866A /* AnimalFortuneTelling */ = {
 			isa = PBXGroup;
 			children = (
-				23B3CC2B1D68CD38003AB5FB /* AnimalType+CoreDataProperties.swift */,
-				23B3CC2C1D68CD38003AB5FB /* AnimalType.swift */,
 				23B3CC271D68C696003AB5FB /* Assets.xcassets */,
 				2319CD5C1D6879560073866A /* animalType.json */,
-				2319CD581D68781D0073866A /* Animal+CoreDataProperties.swift */,
-				2319CD591D68781D0073866A /* Animal.swift */,
 				2319CD231D6742200073866A /* AppDelegate.swift */,
 				2319CD251D6742200073866A /* ViewController.swift */,
 				2319CD271D6742200073866A /* Main.storyboard */,
@@ -454,13 +442,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2319CD261D6742200073866A /* ViewController.swift in Sources */,
-				23B3CC2D1D68CD38003AB5FB /* AnimalType+CoreDataProperties.swift in Sources */,
 				2319CD2C1D6742200073866A /* AnimalFortuneTelling.xcdatamodeld in Sources */,
 				2319CD241D6742200073866A /* AppDelegate.swift in Sources */,
-				2319CD5A1D68781D0073866A /* Animal+CoreDataProperties.swift in Sources */,
-				2319CD5B1D68781D0073866A /* Animal.swift in Sources */,
 				23B3CC321D6B2232003AB5FB /* CoreDataStack.swift in Sources */,
-				23B3CC2E1D68CD38003AB5FB /* AnimalType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
