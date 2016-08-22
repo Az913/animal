@@ -1,0 +1,724 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2319CD241D6742200073866A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2319CD231D6742200073866A /* AppDelegate.swift */; };
+		2319CD261D6742200073866A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2319CD251D6742200073866A /* ViewController.swift */; };
+		2319CD291D6742200073866A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2319CD271D6742200073866A /* Main.storyboard */; };
+		2319CD2C1D6742200073866A /* AnimalFortuneTelling.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2319CD2A1D6742200073866A /* AnimalFortuneTelling.xcdatamodeld */; };
+		2319CD3C1D6742200073866A /* AnimalFortuneTellingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2319CD3B1D6742200073866A /* AnimalFortuneTellingTests.swift */; };
+		2319CD471D6742200073866A /* AnimalFortuneTellingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2319CD461D6742200073866A /* AnimalFortuneTellingUITests.swift */; };
+		2319CD571D6742E00073866A /* AnimalFortuneTellingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2319CD561D6742E00073866A /* AnimalFortuneTellingView.xib */; };
+		2319CD5A1D68781D0073866A /* Animal+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2319CD581D68781D0073866A /* Animal+CoreDataProperties.swift */; };
+		2319CD5B1D68781D0073866A /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2319CD591D68781D0073866A /* Animal.swift */; };
+		2319CD5D1D6879560073866A /* animalType.json in Resources */ = {isa = PBXBuildFile; fileRef = 2319CD5C1D6879560073866A /* animalType.json */; };
+		23B3CC281D68C696003AB5FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23B3CC271D68C696003AB5FB /* Assets.xcassets */; };
+		23B3CC2D1D68CD38003AB5FB /* AnimalType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B3CC2B1D68CD38003AB5FB /* AnimalType+CoreDataProperties.swift */; };
+		23B3CC2E1D68CD38003AB5FB /* AnimalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B3CC2C1D68CD38003AB5FB /* AnimalType.swift */; };
+		23B3CC301D68CEA7003AB5FB /* AnimalData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23B3CC2F1D68CEA7003AB5FB /* AnimalData.plist */; };
+		23B3CC321D6B2232003AB5FB /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B3CC311D6B2232003AB5FB /* CoreDataStack.swift */; };
+		D7BC014D91576587BE42D11F /* Pods_AnimalFortuneTellingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD88BB81EB9EEE92A937755A /* Pods_AnimalFortuneTellingUITests.framework */; };
+		E2AC2C42B7C9DCB99BCA85D6 /* Pods_AnimalFortuneTelling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AFEF9DC05A2EBF300087817 /* Pods_AnimalFortuneTelling.framework */; };
+		E743CDA535F890433C387DD3 /* Pods_AnimalFortuneTellingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F23CEBAA8E709CA2B545868 /* Pods_AnimalFortuneTellingTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2319CD381D6742200073866A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2319CD181D6742200073866A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2319CD1F1D6742200073866A;
+			remoteInfo = AnimalFortuneTelling;
+		};
+		2319CD431D6742200073866A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2319CD181D6742200073866A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2319CD1F1D6742200073866A;
+			remoteInfo = AnimalFortuneTelling;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C61997F960D9D6C358217D4 /* Pods-AnimalFortuneTellingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimalFortuneTellingUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnimalFortuneTellingUITests/Pods-AnimalFortuneTellingUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1634848AB77701A2B4884C04 /* Pods-AnimalFortuneTellingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimalFortuneTellingTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnimalFortuneTellingTests/Pods-AnimalFortuneTellingTests.release.xcconfig"; sourceTree = "<group>"; };
+		2319CD201D6742200073866A /* AnimalFortuneTelling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimalFortuneTelling.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2319CD231D6742200073866A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2319CD251D6742200073866A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2319CD281D6742200073866A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2319CD2B1D6742200073866A /* AnimalFortuneTelling.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AnimalFortuneTelling.xcdatamodel; sourceTree = "<group>"; };
+		2319CD321D6742200073866A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2319CD371D6742200073866A /* AnimalFortuneTellingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimalFortuneTellingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2319CD3B1D6742200073866A /* AnimalFortuneTellingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalFortuneTellingTests.swift; sourceTree = "<group>"; };
+		2319CD3D1D6742200073866A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2319CD421D6742200073866A /* AnimalFortuneTellingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimalFortuneTellingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2319CD461D6742200073866A /* AnimalFortuneTellingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalFortuneTellingUITests.swift; sourceTree = "<group>"; };
+		2319CD481D6742200073866A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2319CD561D6742E00073866A /* AnimalFortuneTellingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnimalFortuneTellingView.xib; sourceTree = "<group>"; };
+		2319CD581D68781D0073866A /* Animal+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Animal+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		2319CD591D68781D0073866A /* Animal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		2319CD5C1D6879560073866A /* animalType.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = animalType.json; path = "../../../../Downloads/test-master/AnimalFortuneTelling/animalType.json"; sourceTree = "<group>"; };
+		23B3CC271D68C696003AB5FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		23B3CC2B1D68CD38003AB5FB /* AnimalType+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AnimalType+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		23B3CC2C1D68CD38003AB5FB /* AnimalType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalType.swift; sourceTree = "<group>"; };
+		23B3CC2F1D68CEA7003AB5FB /* AnimalData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AnimalData.plist; path = ../AnimalData.plist; sourceTree = "<group>"; };
+		23B3CC311D6B2232003AB5FB /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		3F23CEBAA8E709CA2B545868 /* Pods_AnimalFortuneTellingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimalFortuneTellingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BEF6DB9503A31E3494D4BD9 /* Pods-AnimalFortuneTellingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimalFortuneTellingTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnimalFortuneTellingTests/Pods-AnimalFortuneTellingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5AFEF9DC05A2EBF300087817 /* Pods_AnimalFortuneTelling.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimalFortuneTelling.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FDB2EF3C69142376AF2AA9D /* Pods-AnimalFortuneTelling.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimalFortuneTelling.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnimalFortuneTelling/Pods-AnimalFortuneTelling.debug.xcconfig"; sourceTree = "<group>"; };
+		9D8FF288A02790C021225F72 /* Pods-AnimalFortuneTellingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimalFortuneTellingUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnimalFortuneTellingUITests/Pods-AnimalFortuneTellingUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CD88BB81EB9EEE92A937755A /* Pods_AnimalFortuneTellingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimalFortuneTellingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD26B5639618845C17935F5E /* Pods-AnimalFortuneTelling.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimalFortuneTelling.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnimalFortuneTelling/Pods-AnimalFortuneTelling.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2319CD1D1D6742200073866A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2AC2C42B7C9DCB99BCA85D6 /* Pods_AnimalFortuneTelling.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2319CD341D6742200073866A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E743CDA535F890433C387DD3 /* Pods_AnimalFortuneTellingTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2319CD3F1D6742200073866A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7BC014D91576587BE42D11F /* Pods_AnimalFortuneTellingUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2319CD171D6742200073866A = {
+			isa = PBXGroup;
+			children = (
+				2319CD221D6742200073866A /* AnimalFortuneTelling */,
+				2319CD3A1D6742200073866A /* AnimalFortuneTellingTests */,
+				2319CD451D6742200073866A /* AnimalFortuneTellingUITests */,
+				2319CD211D6742200073866A /* Products */,
+				92CBD0B9FE9D2F66E85E81E3 /* Pods */,
+				DC33FE9C5C399BCF2F4F3CF8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2319CD211D6742200073866A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2319CD201D6742200073866A /* AnimalFortuneTelling.app */,
+				2319CD371D6742200073866A /* AnimalFortuneTellingTests.xctest */,
+				2319CD421D6742200073866A /* AnimalFortuneTellingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2319CD221D6742200073866A /* AnimalFortuneTelling */ = {
+			isa = PBXGroup;
+			children = (
+				23B3CC2B1D68CD38003AB5FB /* AnimalType+CoreDataProperties.swift */,
+				23B3CC2C1D68CD38003AB5FB /* AnimalType.swift */,
+				23B3CC271D68C696003AB5FB /* Assets.xcassets */,
+				2319CD5C1D6879560073866A /* animalType.json */,
+				2319CD581D68781D0073866A /* Animal+CoreDataProperties.swift */,
+				2319CD591D68781D0073866A /* Animal.swift */,
+				2319CD231D6742200073866A /* AppDelegate.swift */,
+				2319CD251D6742200073866A /* ViewController.swift */,
+				2319CD271D6742200073866A /* Main.storyboard */,
+				2319CD321D6742200073866A /* Info.plist */,
+				2319CD2A1D6742200073866A /* AnimalFortuneTelling.xcdatamodeld */,
+				2319CD561D6742E00073866A /* AnimalFortuneTellingView.xib */,
+				23B3CC311D6B2232003AB5FB /* CoreDataStack.swift */,
+			);
+			path = AnimalFortuneTelling;
+			sourceTree = "<group>";
+		};
+		2319CD3A1D6742200073866A /* AnimalFortuneTellingTests */ = {
+			isa = PBXGroup;
+			children = (
+				23B3CC2F1D68CEA7003AB5FB /* AnimalData.plist */,
+				2319CD3B1D6742200073866A /* AnimalFortuneTellingTests.swift */,
+				2319CD3D1D6742200073866A /* Info.plist */,
+			);
+			path = AnimalFortuneTellingTests;
+			sourceTree = "<group>";
+		};
+		2319CD451D6742200073866A /* AnimalFortuneTellingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2319CD461D6742200073866A /* AnimalFortuneTellingUITests.swift */,
+				2319CD481D6742200073866A /* Info.plist */,
+			);
+			path = AnimalFortuneTellingUITests;
+			sourceTree = "<group>";
+		};
+		92CBD0B9FE9D2F66E85E81E3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7FDB2EF3C69142376AF2AA9D /* Pods-AnimalFortuneTelling.debug.xcconfig */,
+				FD26B5639618845C17935F5E /* Pods-AnimalFortuneTelling.release.xcconfig */,
+				4BEF6DB9503A31E3494D4BD9 /* Pods-AnimalFortuneTellingTests.debug.xcconfig */,
+				1634848AB77701A2B4884C04 /* Pods-AnimalFortuneTellingTests.release.xcconfig */,
+				9D8FF288A02790C021225F72 /* Pods-AnimalFortuneTellingUITests.debug.xcconfig */,
+				0C61997F960D9D6C358217D4 /* Pods-AnimalFortuneTellingUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DC33FE9C5C399BCF2F4F3CF8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5AFEF9DC05A2EBF300087817 /* Pods_AnimalFortuneTelling.framework */,
+				3F23CEBAA8E709CA2B545868 /* Pods_AnimalFortuneTellingTests.framework */,
+				CD88BB81EB9EEE92A937755A /* Pods_AnimalFortuneTellingUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2319CD1F1D6742200073866A /* AnimalFortuneTelling */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2319CD4B1D6742210073866A /* Build configuration list for PBXNativeTarget "AnimalFortuneTelling" */;
+			buildPhases = (
+				63CDBEAA47A6ACCFEFFA814E /* [CP] Check Pods Manifest.lock */,
+				2319CD1C1D6742200073866A /* Sources */,
+				2319CD1D1D6742200073866A /* Frameworks */,
+				2319CD1E1D6742200073866A /* Resources */,
+				72FEF5EB36C2580E98B0B53F /* [CP] Embed Pods Frameworks */,
+				A2FB507466AD934CD5595D3F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AnimalFortuneTelling;
+			productName = AnimalFortuneTelling;
+			productReference = 2319CD201D6742200073866A /* AnimalFortuneTelling.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2319CD361D6742200073866A /* AnimalFortuneTellingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2319CD4E1D6742210073866A /* Build configuration list for PBXNativeTarget "AnimalFortuneTellingTests" */;
+			buildPhases = (
+				0B3FF3CB8467AC57A672253A /* [CP] Check Pods Manifest.lock */,
+				2319CD331D6742200073866A /* Sources */,
+				2319CD341D6742200073866A /* Frameworks */,
+				2319CD351D6742200073866A /* Resources */,
+				1AEE869805845434E7B988A1 /* [CP] Embed Pods Frameworks */,
+				B9EE83BC0817D3040FD24D08 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2319CD391D6742200073866A /* PBXTargetDependency */,
+			);
+			name = AnimalFortuneTellingTests;
+			productName = AnimalFortuneTellingTests;
+			productReference = 2319CD371D6742200073866A /* AnimalFortuneTellingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2319CD411D6742200073866A /* AnimalFortuneTellingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2319CD511D6742210073866A /* Build configuration list for PBXNativeTarget "AnimalFortuneTellingUITests" */;
+			buildPhases = (
+				25EC1C93632D58623AC88D87 /* [CP] Check Pods Manifest.lock */,
+				2319CD3E1D6742200073866A /* Sources */,
+				2319CD3F1D6742200073866A /* Frameworks */,
+				2319CD401D6742200073866A /* Resources */,
+				D132022220F9284134096EA7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2319CD441D6742200073866A /* PBXTargetDependency */,
+			);
+			name = AnimalFortuneTellingUITests;
+			productName = AnimalFortuneTellingUITests;
+			productReference = 2319CD421D6742200073866A /* AnimalFortuneTellingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2319CD181D6742200073866A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "ハラダ アズサ";
+				TargetAttributes = {
+					2319CD1F1D6742200073866A = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					2319CD361D6742200073866A = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 2319CD1F1D6742200073866A;
+					};
+					2319CD411D6742200073866A = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 2319CD1F1D6742200073866A;
+					};
+				};
+			};
+			buildConfigurationList = 2319CD1B1D6742200073866A /* Build configuration list for PBXProject "AnimalFortuneTelling" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2319CD171D6742200073866A;
+			productRefGroup = 2319CD211D6742200073866A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2319CD1F1D6742200073866A /* AnimalFortuneTelling */,
+				2319CD361D6742200073866A /* AnimalFortuneTellingTests */,
+				2319CD411D6742200073866A /* AnimalFortuneTellingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2319CD1E1D6742200073866A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23B3CC301D68CEA7003AB5FB /* AnimalData.plist in Resources */,
+				2319CD571D6742E00073866A /* AnimalFortuneTellingView.xib in Resources */,
+				2319CD291D6742200073866A /* Main.storyboard in Resources */,
+				23B3CC281D68C696003AB5FB /* Assets.xcassets in Resources */,
+				2319CD5D1D6879560073866A /* animalType.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2319CD351D6742200073866A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2319CD401D6742200073866A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B3FF3CB8467AC57A672253A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1AEE869805845434E7B988A1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnimalFortuneTellingTests/Pods-AnimalFortuneTellingTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		25EC1C93632D58623AC88D87 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		63CDBEAA47A6ACCFEFFA814E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		72FEF5EB36C2580E98B0B53F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnimalFortuneTelling/Pods-AnimalFortuneTelling-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2FB507466AD934CD5595D3F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnimalFortuneTelling/Pods-AnimalFortuneTelling-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9EE83BC0817D3040FD24D08 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnimalFortuneTellingTests/Pods-AnimalFortuneTellingTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D132022220F9284134096EA7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnimalFortuneTellingUITests/Pods-AnimalFortuneTellingUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2319CD1C1D6742200073866A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2319CD261D6742200073866A /* ViewController.swift in Sources */,
+				23B3CC2D1D68CD38003AB5FB /* AnimalType+CoreDataProperties.swift in Sources */,
+				2319CD2C1D6742200073866A /* AnimalFortuneTelling.xcdatamodeld in Sources */,
+				2319CD241D6742200073866A /* AppDelegate.swift in Sources */,
+				2319CD5A1D68781D0073866A /* Animal+CoreDataProperties.swift in Sources */,
+				2319CD5B1D68781D0073866A /* Animal.swift in Sources */,
+				23B3CC321D6B2232003AB5FB /* CoreDataStack.swift in Sources */,
+				23B3CC2E1D68CD38003AB5FB /* AnimalType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2319CD331D6742200073866A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2319CD3C1D6742200073866A /* AnimalFortuneTellingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2319CD3E1D6742200073866A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2319CD471D6742200073866A /* AnimalFortuneTellingUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2319CD391D6742200073866A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2319CD1F1D6742200073866A /* AnimalFortuneTelling */;
+			targetProxy = 2319CD381D6742200073866A /* PBXContainerItemProxy */;
+		};
+		2319CD441D6742200073866A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2319CD1F1D6742200073866A /* AnimalFortuneTelling */;
+			targetProxy = 2319CD431D6742200073866A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2319CD271D6742200073866A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2319CD281D6742200073866A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2319CD491D6742210073866A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2319CD4A1D6742210073866A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2319CD4C1D6742210073866A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FDB2EF3C69142376AF2AA9D /* Pods-AnimalFortuneTelling.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AnimalFortuneTelling/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "---.AnimalFortuneTelling";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2319CD4D1D6742210073866A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD26B5639618845C17935F5E /* Pods-AnimalFortuneTelling.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AnimalFortuneTelling/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "---.AnimalFortuneTelling";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2319CD4F1D6742210073866A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BEF6DB9503A31E3494D4BD9 /* Pods-AnimalFortuneTellingTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AnimalFortuneTellingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "---.AnimalFortuneTellingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AnimalFortuneTelling.app/AnimalFortuneTelling";
+			};
+			name = Debug;
+		};
+		2319CD501D6742210073866A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1634848AB77701A2B4884C04 /* Pods-AnimalFortuneTellingTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AnimalFortuneTellingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "---.AnimalFortuneTellingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AnimalFortuneTelling.app/AnimalFortuneTelling";
+			};
+			name = Release;
+		};
+		2319CD521D6742210073866A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D8FF288A02790C021225F72 /* Pods-AnimalFortuneTellingUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = AnimalFortuneTellingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "---.AnimalFortuneTellingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AnimalFortuneTelling;
+			};
+			name = Debug;
+		};
+		2319CD531D6742210073866A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C61997F960D9D6C358217D4 /* Pods-AnimalFortuneTellingUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = AnimalFortuneTellingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "---.AnimalFortuneTellingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AnimalFortuneTelling;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2319CD1B1D6742200073866A /* Build configuration list for PBXProject "AnimalFortuneTelling" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2319CD491D6742210073866A /* Debug */,
+				2319CD4A1D6742210073866A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2319CD4B1D6742210073866A /* Build configuration list for PBXNativeTarget "AnimalFortuneTelling" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2319CD4C1D6742210073866A /* Debug */,
+				2319CD4D1D6742210073866A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2319CD4E1D6742210073866A /* Build configuration list for PBXNativeTarget "AnimalFortuneTellingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2319CD4F1D6742210073866A /* Debug */,
+				2319CD501D6742210073866A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2319CD511D6742210073866A /* Build configuration list for PBXNativeTarget "AnimalFortuneTellingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2319CD521D6742210073866A /* Debug */,
+				2319CD531D6742210073866A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2319CD2A1D6742200073866A /* AnimalFortuneTelling.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2319CD2B1D6742200073866A /* AnimalFortuneTelling.xcdatamodel */,
+			);
+			currentVersion = 2319CD2B1D6742200073866A /* AnimalFortuneTelling.xcdatamodel */;
+			path = AnimalFortuneTelling.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2319CD181D6742200073866A /* Project object */;
+}

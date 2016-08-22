@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15E2066" minimumToolsVersion="Automatic">
+    <entity name="Animal" representedClassName=".Animal" syncable="YES">
+        <attribute name="animalId" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="animalType" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="AnimalType" representedClassName=".AnimalType" syncable="YES">
+        <attribute name="animalName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="future" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="goal" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="right" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Animal" positionX="-45" positionY="0" width="128" height="75"/>
+        <element name="AnimalType" positionX="-45" positionY="18" width="128" height="120"/>
+    </elements>
+</model>
