@@ -22,11 +22,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var results:NSArray = readData()
+        var results:NSArray = readAnimals()
         if(results.count == 0) {
             // 初期データーの投入
             writeAnimals()
-            results = readData()
+            results = readAnimals()
         }
         
         //占いボタン生成
@@ -78,9 +78,7 @@ class ViewController: UIViewController {
         text.backgroundColor = UIColor.clearColor()
         text.hidden = false
         
-        let moon = "MOON"
-        
-        let results:NSArray = readData()
+        let results:NSArray = readAnimals()
         if (results.count > 0 ) {
             for i in results {
                 let obj = i as! NSManagedObject
@@ -92,11 +90,11 @@ class ViewController: UIViewController {
                     backgroundImage.hidden = false
                     
                     switch type {
-                    case 1:
-                        backgroundImage.image = UIImage(named: moon+".png")
-                    case 2:
+                    case 1: //月
+                        backgroundImage.image = UIImage(named: "MOON.png")
+                    case 2: //地球
                         backgroundImage.image = UIImage(named: "EARTH.png")
-                    case 3:
+                    case 3: //太陽
                         backgroundImage.image = UIImage(named: "SUN.png")
                     default:
                         backgroundImage.hidden = true
@@ -193,11 +191,7 @@ class ViewController: UIViewController {
             return (yourAnimal,animalText,animal)
     }
     
-    func getYourType(){
-        
-    }
-    
-    func readData() -> NSArray{
+    func readAnimals() -> NSArray{
        
         //let app: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let categoryContext: NSManagedObjectContext = coreDataStack.managedObjectContext
@@ -212,10 +206,8 @@ class ViewController: UIViewController {
         
         // plist の読み込み
         let path:NSString = NSBundle.mainBundle().pathForResource("AnimalData", ofType: "plist")!
-        
         let masterDataDictionary:NSDictionary = NSDictionary(contentsOfFile: path as String)!
         
-       // let app: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let categoryContext: NSManagedObjectContext = coreDataStack.managedObjectContext
         
         for i in 1...masterDataDictionary.count {

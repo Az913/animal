@@ -56,7 +56,7 @@
 		2319CD461D6742200073866A /* AnimalFortuneTellingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalFortuneTellingUITests.swift; sourceTree = "<group>"; };
 		2319CD481D6742200073866A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2319CD561D6742E00073866A /* AnimalFortuneTellingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnimalFortuneTellingView.xib; sourceTree = "<group>"; };
-		2319CD5C1D6879560073866A /* animalType.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = animalType.json; path = "../../../../Downloads/test-master/AnimalFortuneTelling/animalType.json"; sourceTree = "<group>"; };
+		2319CD5C1D6879560073866A /* animalType.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animalType.json; sourceTree = "<group>"; };
 		23B3CC271D68C696003AB5FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23B3CC2F1D68CEA7003AB5FB /* AnimalData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AnimalData.plist; path = ../AnimalData.plist; sourceTree = "<group>"; };
 		23B3CC311D6B2232003AB5FB /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
@@ -131,6 +131,7 @@
 				2319CD2A1D6742200073866A /* AnimalFortuneTelling.xcdatamodeld */,
 				2319CD561D6742E00073866A /* AnimalFortuneTellingView.xib */,
 				23B3CC311D6B2232003AB5FB /* CoreDataStack.swift */,
+				23B3CC2F1D68CEA7003AB5FB /* AnimalData.plist */,
 			);
 			path = AnimalFortuneTelling;
 			sourceTree = "<group>";
@@ -138,7 +139,6 @@
 		2319CD3A1D6742200073866A /* AnimalFortuneTellingTests */ = {
 			isa = PBXGroup;
 			children = (
-				23B3CC2F1D68CEA7003AB5FB /* AnimalData.plist */,
 				2319CD3B1D6742200073866A /* AnimalFortuneTellingTests.swift */,
 				2319CD3D1D6742200073866A /* Info.plist */,
 			);

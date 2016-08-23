@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AnimalFortuneTelling/ViewController.swift"
-            timestampString = "493567130.768326"
+            timestampString = "493641675.765959"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "206"
-            endingLineNumber = "206"
-            landmarkName = "readData()"
+            startingLineNumber = "200"
+            endingLineNumber = "200"
+            landmarkName = "readAnimals()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AnimalFortuneTelling/ViewController.swift"
-            timestampString = "493567354.654457"
+            timestampString = "493641675.765959"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "221"
-            endingLineNumber = "221"
+            startingLineNumber = "213"
+            endingLineNumber = "213"
             landmarkName = "writeAnimals()"
             landmarkType = "5">
          </BreakpointContent>
