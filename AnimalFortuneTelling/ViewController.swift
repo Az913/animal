@@ -10,15 +10,18 @@ import UIKit
 import SwiftyJSON
 import CoreData
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,NSFetchedResultsControllerDelegate {
     private let coreDataStack = CoreDataStack()
+    
     
     @IBOutlet weak var date: UIDatePicker!
     @IBOutlet weak var yourAnimal: UILabel!
     @IBOutlet weak var text: UITextView!
     @IBOutlet weak var btn: UIButton!
     
+    @IBOutlet weak var animalBtn: UIButton!
     @IBOutlet weak var backgroundImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -29,16 +32,7 @@ class ViewController: UIViewController {
             results = readAnimals()
         }
         
-        //占いボタン生成
-        //let btn: UIButton = UIButton(frame: CGRectMake(100, 150, 200, 30))
-        //writeBtn.backgroundColor = UIColor.magentaColor()
-        btn.setTitle("★占う★", forState: UIControlState.Normal)
-        btn.addTarget(self, action: #selector(ViewController.buttonTapped(_:)), forControlEvents: .TouchUpInside)
-        date.setValue(UIColor.whiteColor(), forKey: "textColor")
-        date.setValue(false, forKey: "highlightsToday")
-        
-        text.editable = false
-        text.hidden = true
+        initLayout()
         
     }
     
@@ -54,7 +48,7 @@ class ViewController: UIViewController {
         let birthDay = day(date.date)
         
         let referenceValue = monthReferenceValue(month(date.date))
-        print(referenceValue)
+
         switch month(date.date) {
         case 1,2:
             yourValue = (birthYear-4)*5+Int((birthYear-1)/4) + referenceValue + birthDay
@@ -66,10 +60,9 @@ class ViewController: UIViewController {
         return yourValue%60 != 0 ? String(yourValue%60) : "60"
     }
     
+    
     func buttonTapped(sender: UIButton) {
         let year = format(date.date)
-        print(year)
-        
         
         let a = try! getJson(year)
         yourAnimal.text = a.yourAnimal
@@ -77,6 +70,8 @@ class ViewController: UIViewController {
         
         text.backgroundColor = UIColor.clearColor()
         text.hidden = false
+        
+        animalBtn.hidden = false
         
         let results:NSArray = readAnimals()
         if (results.count > 0 ) {
@@ -156,7 +151,6 @@ class ViewController: UIViewController {
      
      - returns (yourAnimal,animalText): (動物タイプ、説明）
      */
-    
     func getJson(num: String?)
         throws -> (yourAnimal:String,animalText:String,animal:String) {
             
@@ -191,9 +185,13 @@ class ViewController: UIViewController {
             return (yourAnimal,animalText,animal)
     }
     
+    /**
+     CoreData読み込み
+     
+     - returns NSArray: データ
+     */
     func readAnimals() -> NSArray{
        
-        //let app: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let categoryContext: NSManagedObjectContext = coreDataStack.managedObjectContext
         let categoryRequest: NSFetchRequest = NSFetchRequest(entityName: "AnimalType")
         
@@ -202,6 +200,10 @@ class ViewController: UIViewController {
         return results
     }
     
+    /**
+     CoreData書き込み
+     
+    */
     func writeAnimals() {
         
         // plist の読み込み
@@ -211,6 +213,7 @@ class ViewController: UIViewController {
         let categoryContext: NSManagedObjectContext = coreDataStack.managedObjectContext
         
         for i in 1...masterDataDictionary.count {
+            
             let indexName: String = "animal" + String(i)
             let item: AnyObject = masterDataDictionary[indexName]!
             
@@ -231,6 +234,34 @@ class ViewController: UIViewController {
         }
     }
     
+    /**
+     初期設定
+     */
+    func initLayout(){
+        //占いボタン生成
+        //let btn: UIButton = UIButton(frame: CGRectMake(100, 150, 200, 30))
+        //writeBtn.backgroundColor = UIColor.magentaColor()
+        btn.setTitle("★占う★", forState: UIControlState.Normal)
+        btn.addTarget(self, action: #selector(ViewController.buttonTapped(_:)), forControlEvents: .TouchUpInside)
+        date.setValue(UIColor.whiteColor(), forKey: "textColor")
+        date.setValue(false, forKey: "highlightsToday")
+        
+        text.editable = false
+        text.hidden = true
+        
+        animalBtn.hidden = true
+        
+        animalBtn.addTarget(self, action: #selector(ViewController.animalBtnTapped(_:)), forControlEvents: .TouchUpInside)
+        
+    }
+    
+    func animalBtnTapped(sender: UIButton) {
+        let nextNav = AnimalListViewController()
+        let nav = UINavigationController(rootViewController: nextNav)
+        nav.navigationBar.backgroundColor = UIColor.brownColor()
+        self.presentViewController(nav, animated: true, completion: nil)
+    
+    }
     //    // データ読み込み
     //    func readData1() -> String{
     //        var ret = ""

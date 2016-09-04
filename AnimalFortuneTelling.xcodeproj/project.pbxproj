@@ -13,11 +13,15 @@
 		2319CD2C1D6742200073866A /* AnimalFortuneTelling.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2319CD2A1D6742200073866A /* AnimalFortuneTelling.xcdatamodeld */; };
 		2319CD3C1D6742200073866A /* AnimalFortuneTellingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2319CD3B1D6742200073866A /* AnimalFortuneTellingTests.swift */; };
 		2319CD471D6742200073866A /* AnimalFortuneTellingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2319CD461D6742200073866A /* AnimalFortuneTellingUITests.swift */; };
-		2319CD571D6742E00073866A /* AnimalFortuneTellingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2319CD561D6742E00073866A /* AnimalFortuneTellingView.xib */; };
+		2319CD571D6742E00073866A /* AnimalListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2319CD561D6742E00073866A /* AnimalListView.xib */; };
 		2319CD5D1D6879560073866A /* animalType.json in Resources */ = {isa = PBXBuildFile; fileRef = 2319CD5C1D6879560073866A /* animalType.json */; };
 		23B3CC281D68C696003AB5FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23B3CC271D68C696003AB5FB /* Assets.xcassets */; };
 		23B3CC301D68CEA7003AB5FB /* AnimalData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23B3CC2F1D68CEA7003AB5FB /* AnimalData.plist */; };
 		23B3CC321D6B2232003AB5FB /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B3CC311D6B2232003AB5FB /* CoreDataStack.swift */; };
+		23B3CC3A1D6DC07B003AB5FB /* AnimalListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B3CC391D6DC07B003AB5FB /* AnimalListViewController.swift */; };
+		23B3CCB41D6F217C003AB5FB /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B3CCB31D6F217C003AB5FB /* Extension.swift */; };
+		23B3CCB61D6F263E003AB5FB /* Animals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B3CCB51D6F263E003AB5FB /* Animals.swift */; };
+		23B3CCB91D730961003AB5FB /* AnimalsListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23B3CCB81D730961003AB5FB /* AnimalsListViewCell.xib */; };
 		D7BC014D91576587BE42D11F /* Pods_AnimalFortuneTellingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD88BB81EB9EEE92A937755A /* Pods_AnimalFortuneTellingUITests.framework */; };
 		E2AC2C42B7C9DCB99BCA85D6 /* Pods_AnimalFortuneTelling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AFEF9DC05A2EBF300087817 /* Pods_AnimalFortuneTelling.framework */; };
 		E743CDA535F890433C387DD3 /* Pods_AnimalFortuneTellingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F23CEBAA8E709CA2B545868 /* Pods_AnimalFortuneTellingTests.framework */; };
@@ -55,11 +59,15 @@
 		2319CD421D6742200073866A /* AnimalFortuneTellingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimalFortuneTellingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2319CD461D6742200073866A /* AnimalFortuneTellingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalFortuneTellingUITests.swift; sourceTree = "<group>"; };
 		2319CD481D6742200073866A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2319CD561D6742E00073866A /* AnimalFortuneTellingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnimalFortuneTellingView.xib; sourceTree = "<group>"; };
+		2319CD561D6742E00073866A /* AnimalListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnimalListView.xib; sourceTree = "<group>"; };
 		2319CD5C1D6879560073866A /* animalType.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animalType.json; sourceTree = "<group>"; };
 		23B3CC271D68C696003AB5FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23B3CC2F1D68CEA7003AB5FB /* AnimalData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AnimalData.plist; path = ../AnimalData.plist; sourceTree = "<group>"; };
 		23B3CC311D6B2232003AB5FB /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		23B3CC391D6DC07B003AB5FB /* AnimalListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalListViewController.swift; sourceTree = "<group>"; };
+		23B3CCB31D6F217C003AB5FB /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		23B3CCB51D6F263E003AB5FB /* Animals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animals.swift; sourceTree = "<group>"; };
+		23B3CCB81D730961003AB5FB /* AnimalsListViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnimalsListViewCell.xib; sourceTree = "<group>"; };
 		3F23CEBAA8E709CA2B545868 /* Pods_AnimalFortuneTellingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimalFortuneTellingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BEF6DB9503A31E3494D4BD9 /* Pods-AnimalFortuneTellingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimalFortuneTellingTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnimalFortuneTellingTests/Pods-AnimalFortuneTellingTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5AFEF9DC05A2EBF300087817 /* Pods_AnimalFortuneTelling.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimalFortuneTelling.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,14 +130,15 @@
 		2319CD221D6742200073866A /* AnimalFortuneTelling */ = {
 			isa = PBXGroup;
 			children = (
+				23B3CCB71D7308E8003AB5FB /* Controllers */,
+				23B3CCB21D6F20F9003AB5FB /* Common */,
+				23B3CCB11D6F20C6003AB5FB /* View */,
 				23B3CC271D68C696003AB5FB /* Assets.xcassets */,
 				2319CD5C1D6879560073866A /* animalType.json */,
+				23B3CCB51D6F263E003AB5FB /* Animals.swift */,
 				2319CD231D6742200073866A /* AppDelegate.swift */,
-				2319CD251D6742200073866A /* ViewController.swift */,
-				2319CD271D6742200073866A /* Main.storyboard */,
 				2319CD321D6742200073866A /* Info.plist */,
 				2319CD2A1D6742200073866A /* AnimalFortuneTelling.xcdatamodeld */,
-				2319CD561D6742E00073866A /* AnimalFortuneTellingView.xib */,
 				23B3CC311D6B2232003AB5FB /* CoreDataStack.swift */,
 				23B3CC2F1D68CEA7003AB5FB /* AnimalData.plist */,
 			);
@@ -152,6 +161,33 @@
 				2319CD481D6742200073866A /* Info.plist */,
 			);
 			path = AnimalFortuneTellingUITests;
+			sourceTree = "<group>";
+		};
+		23B3CCB11D6F20C6003AB5FB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2319CD271D6742200073866A /* Main.storyboard */,
+				2319CD561D6742E00073866A /* AnimalListView.xib */,
+				23B3CCB81D730961003AB5FB /* AnimalsListViewCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		23B3CCB21D6F20F9003AB5FB /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				23B3CCB31D6F217C003AB5FB /* Extension.swift */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		23B3CCB71D7308E8003AB5FB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				23B3CC391D6DC07B003AB5FB /* AnimalListViewController.swift */,
+				2319CD251D6742200073866A /* ViewController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		92CBD0B9FE9D2F66E85E81E3 /* Pods */ = {
@@ -290,7 +326,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				23B3CC301D68CEA7003AB5FB /* AnimalData.plist in Resources */,
-				2319CD571D6742E00073866A /* AnimalFortuneTellingView.xib in Resources */,
+				2319CD571D6742E00073866A /* AnimalListView.xib in Resources */,
+				23B3CCB91D730961003AB5FB /* AnimalsListViewCell.xib in Resources */,
 				2319CD291D6742200073866A /* Main.storyboard in Resources */,
 				23B3CC281D68C696003AB5FB /* Assets.xcassets in Resources */,
 				2319CD5D1D6879560073866A /* animalType.json in Resources */,
@@ -443,8 +480,11 @@
 			files = (
 				2319CD261D6742200073866A /* ViewController.swift in Sources */,
 				2319CD2C1D6742200073866A /* AnimalFortuneTelling.xcdatamodeld in Sources */,
+				23B3CC3A1D6DC07B003AB5FB /* AnimalListViewController.swift in Sources */,
+				23B3CCB41D6F217C003AB5FB /* Extension.swift in Sources */,
 				2319CD241D6742200073866A /* AppDelegate.swift in Sources */,
 				23B3CC321D6B2232003AB5FB /* CoreDataStack.swift in Sources */,
+				23B3CCB61D6F263E003AB5FB /* Animals.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

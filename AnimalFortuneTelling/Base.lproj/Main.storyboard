@@ -58,21 +58,30 @@
                                     <constraint firstAttribute="height" constant="330" id="UKM-u1-bnp"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5k5-fw-eaK">
+                                <rect key="frame" x="94" y="602" width="186" height="30"/>
+                                <state key="normal" title="動物タイプを確認する">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.10482126855095297" green="0.64546826358574616" blue="0.79018733638743455" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="d9n-vp-JGG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="09q-1E-uXf"/>
                             <constraint firstItem="aaU-YX-QpZ" firstAttribute="centerY" secondItem="FaH-WZ-vtn" secondAttribute="centerY" id="CT4-9q-9wF"/>
+                            <constraint firstItem="5k5-fw-eaK" firstAttribute="centerX" secondItem="aaU-YX-QpZ" secondAttribute="centerX" id="E2j-hx-iuv"/>
                             <constraint firstItem="d9n-vp-JGG" firstAttribute="top" secondItem="xiH-z2-y2O" secondAttribute="bottom" constant="5" id="GKF-TU-axP"/>
                             <constraint firstItem="aaU-YX-QpZ" firstAttribute="height" secondItem="FaH-WZ-vtn" secondAttribute="height" id="HuA-6I-JiK"/>
                             <constraint firstItem="bpb-5w-z7A" firstAttribute="top" secondItem="d9n-vp-JGG" secondAttribute="bottom" constant="5" id="JUc-Mg-IIH"/>
                             <constraint firstItem="xiH-z2-y2O" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NmU-8h-nk9"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="5k5-fw-eaK" secondAttribute="bottom" constant="20" id="Nmc-yg-f5Q"/>
                             <constraint firstItem="bpb-5w-z7A" firstAttribute="top" secondItem="d9n-vp-JGG" secondAttribute="bottom" constant="10" id="Nzh-Cx-oar"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="aaU-YX-QpZ" secondAttribute="bottom" constant="73" id="P9C-is-JAt"/>
                             <constraint firstItem="xiH-z2-y2O" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="13" id="VN9-kq-sQj"/>
                             <constraint firstItem="FaH-WZ-vtn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Yy5-8K-hnA"/>
                             <constraint firstItem="xiH-z2-y2O" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="45" id="aX7-Km-pXD"/>
                             <constraint firstItem="aaU-YX-QpZ" firstAttribute="width" secondItem="FaH-WZ-vtn" secondAttribute="width" id="bIx-QA-zhw"/>
+                            <constraint firstItem="5k5-fw-eaK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="78" id="fXY-kE-fTR"/>
                             <constraint firstItem="aaU-YX-QpZ" firstAttribute="top" secondItem="bpb-5w-z7A" secondAttribute="bottom" constant="59" id="vG4-h6-k29"/>
                             <constraint firstItem="bpb-5w-z7A" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yP2-TP-gh6"/>
                             <constraint firstItem="aaU-YX-QpZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="z1V-G7-hdM"/>
@@ -85,6 +94,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="animalBtn" destination="5k5-fw-eaK" id="eud-Pq-LNt"/>
                         <outlet property="backgroundImage" destination="FaH-WZ-vtn" id="56L-Rn-Fy6"/>
                         <outlet property="btn" destination="d9n-vp-JGG" id="ClO-z6-GwY"/>
                         <outlet property="date" destination="xiH-z2-y2O" id="3I1-1c-Nwg"/>
